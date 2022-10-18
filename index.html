@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Countries-API</title>
+    
+</head>
+<body>
+    <header class="header">
+        <h1>Where in the World?</h1>
+        <div class="view-mode">
+            <box-icon type='solid' name='moon' color='white'></box-icon>
+            Dark Mode
+        </div>
+    </header>
+    <div class="user-actions">
+        <div class="searchbox">
+            <box-icon name='search-alt-2' color="white"></box-icon>
+            <input id='search-by-name' type="search" placeholder='Search for a country...' autoComplete='' onchange= filterByCountry()>
+            </input>
+        </div>
+        <select id='search-by-region' title="search-region" onchange= filerByRegion()>
+                <option value="Filter" disabled selected>Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">America</option>
+                <option value="Antarctic">Antarctic</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+                <option value="All">All</option>
+            </select>
+    </div>
+    <div class="main grid">
+        
+    </div>
+</body>
+</html>
